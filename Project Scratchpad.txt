@@ -1,0 +1,32 @@
+Ideas for game implemention:
+
+Multiple classes:
+ - Warrior 	| Big swings, av damage, high health, slow
+ - Rogue 	| Short stabs, av damage (Maybe directional?), av health, fast
+ - Wizard	| Range attacks, av damage, low health, av movement
+ - Druid	| Short range attacks, low damage, low health, high movement - More of a support class.
+
+Each class may have 3 abilities.
+
+----------------------
+
+Classes:
+
+- Warrior
+	Base: Top cleave attack that does average damage (currently same as swing)
+	Special ideas: Ground slam explosion, Javelin throw, defensive stance, charge forward(Similar to dash but immune)
+
+- Rogue
+	Base: Shorter range stab attack doing av damage at double speed.
+	Special ideas: Blink forward, temp invisiblity, poison grenade, sprint, Slash (A nuke sort of skill)
+
+- Wizard
+	Base: Range base attack, high damage slow attack speed.
+	Special ideas: Frost nova, Magma ground, damage aura, lightning mines, 
+	
+
+----------------------
+
+Level Layout
+ - Outside levels | More hill like terrain, lower level monsters
+ - Dungeon enterence | Slightly more powerful mobs, Perhaps more of a flatter map
