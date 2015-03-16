@@ -60,7 +60,12 @@ public class Selection : MonoBehaviour {
 				}
 
 		if (GUI.Button (new Rect ((screenWidth * 70), (screenHeight * 90), 100, 20), "Start Game")) {
-			Application.LoadLevel ("Platform_Level");
+			if(CharacterContainer.charClass == 0){
+				Debug.Log ("Pick a class dumb ass");
+			}
+			if (CharacterContainer.charClass != 0){
+				Application.LoadLevel ("Platform_Level");
+			}
 				}
 
 		if (GUI.Button (new Rect ((screenWidth * 30), (screenHeight * 90), 100, 20), "Back")) {

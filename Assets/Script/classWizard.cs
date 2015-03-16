@@ -5,14 +5,16 @@ public class classWizard : MonoBehaviour {
 
 	float movementSpeed = 10;
 	float Health = 8;
-	GameObject Player;
 	float Moving;
+
+	GameObject Player;
 
 
 	public void setWizard(){
 
 		Player = GameObject.Find ("Body");
 		Player.AddComponent<classWizard>();
+		Player.AddComponent<skillsWizard> ();
 
 		Movement.moveSpeed = movementSpeed;
 		Character.maxHealth = Health;
@@ -20,4 +22,5 @@ public class classWizard : MonoBehaviour {
 		Debug.Log ("Wizard attached");
 
 	}
+
 }
