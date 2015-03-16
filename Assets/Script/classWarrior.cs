@@ -3,13 +3,21 @@ using System.Collections;
 
 public class classWarrior : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	float movementSpeed = 7;
+	float Health = 13;
+	GameObject Player;
+	float Moving;
 	
-	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void setWarrior(){
+		
+		Player = GameObject.Find ("Body");
+		Player.AddComponent<classWarrior>();
+		
+		Movement.moveSpeed = movementSpeed;
+		Character.maxHealth = Health;
+		Character.Health = Health;
+		Debug.Log ("Warrior attached");
+		
 	}
 }

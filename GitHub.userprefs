@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\WeaponAttack.cs">
+    <Files>
+      <File FileName="Assets\Script\CharacterContainer.cs" Line="14" Column="1" />
+      <File FileName="Assets\Script\classWizard.cs" Line="19" Column="3" />
+      <File FileName="Assets\Script\Character.cs" Line="6" Column="21" />
+      <File FileName="Assets\Script\classWarrior.cs" Line="19" Column="29" />
+      <File FileName="Assets\Script\classRogue.cs" Line="19" Column="29" />
+      <File FileName="Assets\Script\classDruid.cs" Line="19" Column="1" />
+      <File FileName="Assets\Script\GraphicUI.cs" Line="16" Column="56" />
+      <File FileName="Assets\Script\WeaponAttack.cs" Line="23" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

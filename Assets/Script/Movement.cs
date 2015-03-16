@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour 
 { 
-	public static float moveSpeed;				// Character movement speed.
+	public static float moveSpeed;		// Character movement speed.
 	public bool grounded = false; 		//is the Character grounded?
 	public Transform groundCheck; 		// Used for creating grounded 
 	float groundRadius = 0.2f;			//
@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
 	bool movement = true;				// Disables movement during knockbacks
 	bool dash_rdy = true;				// Is dash able to be used.
 	float dashForce = 1000f; 			// Power of dash
-	public bool faceLeft;						// Monitors character facing direction
+	public bool faceLeft;				// Monitors character facing direction
 
 
 	void Start(){

@@ -13,7 +13,7 @@ public class GraphicUI : MonoBehaviour {
 	// Load the GUI health box
 	void OnGUI () {
 		// Make a background box
-		GUI.Box(new Rect(10,10,100,20), "Health: " + CharacterListener.Health + "/" + CharacterListener.maxHealth, healthBox);
+		GUI.Box(new Rect(10,10,100,20), "Health: " + Character.Health + "/" + Character.maxHealth, healthBox);
 
 	}
 }

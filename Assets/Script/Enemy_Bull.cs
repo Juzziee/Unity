@@ -3,23 +3,23 @@ using System.Collections;
 
 public class Enemy_Bull : MonoBehaviour {
 	
-	float chargeCD; 				// Seconds to wait
-	public bool charge_rdy; 		// Is moving enabled for this creature.
-	GameObject Bull;				// Bull gameobject.
-	float Bull_pos;					// Current position of the bull
-	GameObject Player;				// Create player objecty
-	float Player_pos;				// Create player position variable 
-	float chargeForce = 1300f;		// Jump force of the monster
-	public Transform groundCheck; 	// Used for creating grounded 
-	float groundRadius = 0.2f;		//
-	public LayerMask whatIsGround;	// Marker to show where the ground is
-	public bool grounded = false; 	//is the Character grounded?
-	public bool visible = false;	// Is the Player in line of site of the mob.
-	Vector3 PlayerLoc;				// Contain for player.transform.position
+	float chargeCD; 					// Seconds to wait
+	public bool charge_rdy; 			// Is moving enabled for this creature.
+	GameObject Bull;					// Bull gameobject.
+	float Bull_pos;						// Current position of the bull
+	GameObject Player;					// Create player objecty
+	float Player_pos;					// Create player position variable 
+	float chargeForce = 1300f;			// Jump force of the monster
+	public Transform groundCheck; 		// Used for creating grounded 
+	float groundRadius = 0.2f;			//
+	public LayerMask whatIsGround;		// Marker to show where the ground is
+	public bool grounded = false; 		//is the Character grounded?
+	public bool visible = false;		// Is the Player in line of site of the mob.
+	Vector3 PlayerLoc;					// Contain for player.transform.position
 	int IgnoreLayer = ((1<<8)|(1<<10)); //Ignores all layers with the exception of 8, 10
-	public int Damage;						// Damage value for mob.
-	int Health;						// Monster health
-	float knockForce = 3f;			// Force which the character will be knocked on both axis	
+	public int Damage;					// Damage value for mob.
+	int Health;							// Monster health
+	float knockForce = 3f;				// Force which the character will be knocked on both axis	
 
 
 

@@ -24,7 +24,11 @@ Classes:
 	Base: Range base attack, high damage slow attack speed.
 	Special ideas: Frost nova, Magma ground, damage aura, lightning mines, 
 	
-
+Change the dash for each class to have their own feel
+- Warrior, a slam at the end for damage
+- Rogue, as is maybe?
+- Wizard, teleports
+- Druid, ???
 ----------------------
 
 Level Layout

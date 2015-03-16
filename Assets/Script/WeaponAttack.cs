@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WeaponAttack : MonoBehaviour {
 
-		public Transform target;
+		Transform target;
 		bool FacingDIR;
 		GameObject cameralistener;
 		GameObject Weapon;
@@ -20,6 +20,7 @@ public class WeaponAttack : MonoBehaviour {
 	
 		void Start (){
 				Character = GameObject.Find ("Body");
+				target = Character.transform;
 				weaponSwing = GameObject.Find ("swordAnchor");
 				weaponBlade = GameObject.Find ("Sword");
 				Physics2D.IgnoreCollision (GetComponent<Collider2D>(), Character.GetComponent<Collider2D>());

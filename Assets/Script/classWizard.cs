@@ -3,23 +3,21 @@ using System.Collections;
 
 public class classWizard : MonoBehaviour {
 
-	float movementSpeed = 8;
+	float movementSpeed = 10;
+	float Health = 8;
 	GameObject Player;
 	float Moving;
-	private Movement movementScript;
 
 
-	// Use this for initialization
-	void Start () {
-	
+	public void setWizard(){
+
+		Player = GameObject.Find ("Body");
+		Player.AddComponent<classWizard>();
+
 		Movement.moveSpeed = movementSpeed;
+		Character.maxHealth = Health;
+		Character.Health = Health;
+		Debug.Log ("Wizard attached");
 
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-		Debug.Log ("Class movement : " + movementSpeed);
 	}
 }
