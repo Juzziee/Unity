@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\Enemy_Archer.cs" />
      <Compile Include="Assets\Script\Enemy_Bull.cs" />
      <Compile Include="Assets\Script\Enemy_Slime.cs" />
+     <Compile Include="Assets\Script\Fireball.cs" />
      <Compile Include="Assets\Script\GraphicUI.cs" />
      <Compile Include="Assets\Script\Ignore.cs" />
      <Compile Include="Assets\Script\Interface.cs" />
