@@ -7,7 +7,7 @@ public class Fireball : MonoBehaviour {
 	public GameObject explosionPrefab;
 	GameObject Explosion;
 	Vector3 impactPos;
-	float waitTime = 0.25f;
+
 
 
 	void Start () {
@@ -21,12 +21,9 @@ public class Fireball : MonoBehaviour {
 		Destroy (gameObject);
 		Explosion = (Instantiate (explosionPrefab, impactPos, transform.rotation)) as GameObject;
 		Explosion.name = "Explosion";
-		StartCoroutine (explodeFade(waitTime));
-	}
-
-	IEnumerator explodeFade(float waitTime) {
-		yield return new WaitForSeconds (waitTime);
-		Destroy (Explosion);
+		Explosion.AddComponent<FireballExplosion> ();
 
 	}
+
+
 }

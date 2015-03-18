@@ -56,6 +56,7 @@
      <Compile Include="Assets\Script\Enemy_Bull.cs" />
      <Compile Include="Assets\Script\Enemy_Slime.cs" />
      <Compile Include="Assets\Script\Fireball.cs" />
+     <Compile Include="Assets\Script\FireballExplosion.cs" />
      <Compile Include="Assets\Script\GraphicUI.cs" />
      <Compile Include="Assets\Script\Ignore.cs" />
      <Compile Include="Assets\Script\Interface.cs" />
@@ -74,6 +75,7 @@
      <Compile Include="Assets\Script\classWarrior.cs" />
      <Compile Include="Assets\Script\classWizard.cs" />
      <Compile Include="Assets\Script\killBlock.cs" />
+     <Compile Include="Assets\Script\rogueAttack.cs" />
      <Compile Include="Assets\Script\skillsWizard.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
