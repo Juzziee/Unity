@@ -16,7 +16,6 @@ public class WeaponAttack : MonoBehaviour {
 		int currentRotation = 170;
 		bool swinging = false;
 		bool isSwinging = false;
-		Vector3 charDirect;
 	
 		void Start (){
 				Character = GameObject.Find ("Body");
@@ -31,8 +30,6 @@ public class WeaponAttack : MonoBehaviour {
 		void Update (){ 
 				// Weapon Rotation
 				if(GameObject.Find("Body")){
-				Vector3 charDirect = Character.gameObject.transform.position;
-				CharacterPos = charDirect.x;
 		
 				Swing ();	
 		

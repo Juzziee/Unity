@@ -5,7 +5,7 @@ public class classWarrior : MonoBehaviour {
 
 	float movementSpeed = 7;
 	float Health = 13;
-	float Moving;
+	public static float Damage = 8;
 	public GameObject weaponPrefab;
 	GameObject Weapon;
 	GameObject Player;

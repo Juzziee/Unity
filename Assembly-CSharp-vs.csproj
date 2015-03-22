@@ -75,8 +75,8 @@
      <Compile Include="Assets\Script\classWarrior.cs" />
      <Compile Include="Assets\Script\classWizard.cs" />
      <Compile Include="Assets\Script\killBlock.cs" />
-     <Compile Include="Assets\Script\rogueAttack.cs" />
      <Compile Include="Assets\Script\skillsWizard.cs" />
+     <Compile Include="Assets\Script\weaponDagger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

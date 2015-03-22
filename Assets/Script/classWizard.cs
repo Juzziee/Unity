@@ -5,7 +5,7 @@ public class classWizard : MonoBehaviour {
 
 	float movementSpeed = 10;
 	float Health = 8;
-	float Moving;
+	public static float Damage = 12;
 
 	GameObject Player;
 

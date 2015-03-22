@@ -6,9 +6,7 @@ public class Enemy_Archer : MonoBehaviour
 
 		GameObject Archer;				// Archer gameobject.
 		public GameObject arrowPrefab;	// Arrow Object.
-		float Archer_pos;					// Current position of the bull
 		GameObject Player;				// Create player objecty
-		float Player_pos;				// Create player position variable 
 		public Transform groundCheck; 	// Used for creating grounded 
 		float groundRadius = 0.2f;		//
 		public LayerMask whatIsGround;	// Marker to show where the ground is
@@ -18,7 +16,7 @@ public class Enemy_Archer : MonoBehaviour
 		Vector3 ArrowRot;				//	Arrow rotation to hit player.
 		int IgnoreLayer = ((1 << 8) | (1 << 10)); //Ignores all layers with the exception of 8, 10
 		public int Damage;						// Damage value for mob.
-		int Health;						// Monster health
+		public static int Health;						// Monster health
 		float knockForce = 3f;			// Force which the character will be knocked on both axis
 		bool ShootRDY = true; 			// Is the monster able to shoot
 		float ShootCD = 3;	
@@ -46,12 +44,9 @@ public class Enemy_Archer : MonoBehaviour
 		{
 				// Set positions container of each object
 				if (GameObject.Find ("Body")) {
-						Player_pos = Player.transform.position.x;
 						ArrowRot = (Player.transform.position - transform.position).normalized;	
 						
-				}
-				Archer_pos = gameObject.transform.position.x;
-				
+				}				
 		
 				grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);	// Checks for grounded
 				Damage = Random.Range (2, 4);

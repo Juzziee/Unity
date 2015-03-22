@@ -3,24 +3,16 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	public int Damage = 0;
-	public int enemyHealth = 5;
-	public int maxEnemyHealth = 5;
+	public static int Damage;
+	public static int enemyHealth;
+	public static int maxEnemyHealth;
 	float knockForce = 3f;			// Force which the character will be knocked on both axis		
 
-	void Start(){
-
-	}
-
-	void Update(){
-		// Damage = Random.Range (1, 4);
-	}
 
 
 	void EnemyDamage(int amount){
 		enemyHealth -= amount;
-		Debug.Log("Enemy taken " + amount + " damage");
-		
+
 		if( enemyHealth <= 0)
 		{
 			Destroy(gameObject);

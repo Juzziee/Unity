@@ -5,7 +5,7 @@ public class Win : MonoBehaviour {
 
 	GameObject Door; 
 	GameObject Player;
-	GameObject Door_Continue;
+//	GameObject Door_Continue;
 	public Sprite Door_Open;
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class Win : MonoBehaviour {
 
 		Door = GameObject.FindGameObjectWithTag ("Door");
 		Player = GameObject.FindGameObjectWithTag ("Player");
-		Door_Continue = GameObject.Find ("Door_Continue");	
+	//	Door_Continue = GameObject.Find ("Door_Continue");	
 
 		// Pulls all spawn locations into array
 		GameObject[] Enemy = GameObject.FindGameObjectsWithTag("Enemy");

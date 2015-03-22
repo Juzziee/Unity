@@ -2,27 +2,31 @@
 using System.Collections;
 
 public class Enemy_Slime : MonoBehaviour {
+	
+	float bounceCD; 					// Seconds to wait
+	float jumpForce = 150f;				// Jump force of the monster
+	float groundRadius = 0.2f;			// 
+	float knockForce = 3f;				// Force which the character will be knocked on both axis	
+	float waitTime = 1.5f;				// How long the immune ability lasts
+	bool grounded = false; 		//is the Character grounded?
+	bool bounce_rdy = true; 			// Is moving enabled for this creature.
+	bool isImmune = false;				// Character immune to damage after knockback
+	GameObject Enemy;					// Enemy object
+	GameObject Player;					// Create player object
+	GameObject Weapon;					// Weapon Container
+	Transform Player_pos;				// Create player position variable 
+	public Transform groundCheck; 		// Used for creating grounded 
+	public LayerMask whatIsGround;		// Marker to show where the ground is
+	public int Damage;					// Monster damage
+	public static int Health = 8;		// Monster health
 
-	// public Movement MovementListener;
-	float bounceCD; 				// Seconds to wait
-	bool bounce_rdy = true; 		// Is moving enabled for this creature.
-	GameObject Enemy;				// Enemy object
-	GameObject Player;				// Create player object
-	GameObject Weapon;				// Weapon Container
-	Transform Player_pos;			// Create player position variable 
-	float jumpForce = 150f;			// Jump force of the monster
-	public Transform groundCheck; 	// Used for creating grounded 
-	float groundRadius = 0.2f;		// 
-	public LayerMask whatIsGround;	// Marker to show where the ground is
-	public bool grounded = false; 	//is the Character grounded?
-	public int Damage;				// Monster damage
-	public int Health;						// Monster health
-	float knockForce = 3f;			// Force which the character will be knocked on both axis	
-	bool isImmune = false;			// Character immune to damage after knockback
-	float waitTime = 1.5f;			// How long the immune ability lasts
 
-
+	
 	void Start (){
+
+
+
+
 		Player = GameObject.FindGameObjectWithTag("Player");
 		Player_pos = Player.transform;
 		Weapon = GameObject.FindGameObjectWithTag("Weapon");
@@ -30,8 +34,6 @@ public class Enemy_Slime : MonoBehaviour {
 		foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Enemy")){
 			Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obj.GetComponent<Collider2D>());
 		}
-
-		Health = 8;
 	}
 
 	void Update () {
